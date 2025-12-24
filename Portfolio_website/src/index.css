@@ -5,7 +5,7 @@
 
   color-scheme: light dark ;
   color: rgb(0, 0, 0);
-  background: linear-gradient(to bottom, hsl(160.91,28.21%,97.29%), hsl(0, 0%, 91%));
+  
   
 
   font-synthesis: none;
@@ -15,19 +15,26 @@
 
   display: flex;
   flex-direction: row-reverse;
+
+  scroll-behavior: smooth;
+
+  box-sizing: border-box;
 }
 
-#root{
-
-  
-  min-height:100vh;
-}
 body {
+
+  background: linear-gradient(to bottom , hsl(160,28%,80%) 0%,hsl(160,28%,90%) 5%, hsl(0, 0%, 91%) 50%);
+  width:78%;  
+  border: 5px solid pink;
+}
+#root {
   /*margin: 0;*/
   display: flex;
-  flex-direction: row ;
-  min-width: 320px;
-  width:78%;
-  height: 100vh;
+  flex-direction: column ;
+  width:100%;  
+  min-height: 100vh;
   border:1px solid black;
+  align-items: center;
+  justify-content: center;
+
 }
