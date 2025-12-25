@@ -4,7 +4,8 @@ import Homie from "./components/home.jsx";
 import Skills from "./components/skills.jsx";
 import Projects from "./components/projects.jsx";
 import References from "./components/references.jsx"; // Ensure you create this
-import Contact from "./components/contact.jsx"
+import Contact from "./components/contact.jsx";
+import '../src/App.css'
 
 function App() {
   
@@ -43,7 +44,10 @@ function App() {
           }
         </div>
 
-        <footer></footer>
+        <footer>
+          <hr id='footerHR'></hr>
+          <p>aom</p>
+        </footer>
       </main>
     </>
   );

@@ -25,7 +25,7 @@
 
 body {
 
-  background: linear-gradient(to bottom , hsl(160,28%,80%) 0%,hsl(160,28%,90%) 5%, hsl(0, 0%, 91%) 50%);
+  background: linear-gradient(to bottom , hsl(160,28%,80%) 0%,hsl(160,28%,90%) 1%, hsl(0, 0%, 91%) 50%);
   width:78%;  
 
   
