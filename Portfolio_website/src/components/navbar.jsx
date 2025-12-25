@@ -45,7 +45,7 @@ const Navbar = ({setView}) => {
                     <VscReferences size="35" className="navIcon" />
                     <span href="/references">References</span>
                 </div>
-                <div className="navItem" role="button" href="https://github.com/obzero-chillin" target="_blank" rel="noopener noreferrer">
+                <div className="navItem" role="button" onClick={(e) => window.open('https://github.com/obzero-chillin', '_blank')}>
                     <FaGithub size="35" className="navIcon" />
                     <span> GitHub</span>
                 </div>

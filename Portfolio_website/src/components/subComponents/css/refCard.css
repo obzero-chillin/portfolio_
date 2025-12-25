@@ -1,0 +1,31 @@
+.refCard > img{
+    aspect-ratio: 1/2;
+    height: 16em;
+    border-radius: 10%;
+}
+
+.refCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    width:25%;
+
+}
+.refCard>button{
+    padding: 8px 16px;   
+    
+    background-color: hsl(37.44,59.11%,70.12%);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
