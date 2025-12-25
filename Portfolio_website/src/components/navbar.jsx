@@ -49,9 +49,9 @@ const Navbar = ({setView}) => {
                     <FaGithub size="35" className="navIcon" />
                     <span> GitHub</span>
                 </div>
-                <div className="navItem" role="button">
+                <div className="navItem" role="button" onClick={(e) => navigateTo(e, '/contact')}>
                     <RiContactsFill size="35" className="navIcon" />
-                    <a href="#contact" onClick={()=> preventDefault()}>Contact</a>
+                    <span href="/contact" >Contact</span>
                 </div>
 
                 </ul>

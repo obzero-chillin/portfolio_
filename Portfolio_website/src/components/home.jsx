@@ -4,7 +4,7 @@ import "./css/homie.css";
 
 const Homie = () => {
     return(
-        <div id="homeSection">
+        <div id="home">
             <h1>
                 Hi, I'm Obonolo(or obi).<br/>           
             

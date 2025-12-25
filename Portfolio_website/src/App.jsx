@@ -4,6 +4,7 @@ import Homie from "./components/home.jsx";
 import Skills from "./components/skills.jsx";
 import Projects from "./components/projects.jsx";
 import References from "./components/references.jsx"; // Ensure you create this
+import Contact from "./components/contact.jsx"
 
 function App() {
   
@@ -36,7 +37,9 @@ function App() {
             </>
           ) : currentView === '/references' ? (
             <References />
-          ) : null
+          ) : currentView === '/contact' ? (
+            <Contact/>
+          ):null
           }
         </div>
 

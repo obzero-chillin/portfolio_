@@ -1,18 +1,18 @@
 
-#homeSection{
+#home{
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-
+    border:2px solid red;
     min-width:30px; /*CONFIGURE THIS*/
-    width:100%;
-    
+    max-width: (77vw,1366px);
     height:100vh;
+    
     text-align: left;
     padding:0 10% 0 10%;
     background: transparent;
-    border: 2px solid blue;
+  
 }
 
 #homeSection> h1{
