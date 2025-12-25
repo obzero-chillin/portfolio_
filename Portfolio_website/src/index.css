@@ -26,7 +26,8 @@
 body {
 
   background: linear-gradient(to bottom , hsl(160,28%,80%) 0%,hsl(160,28%,90%) 1%, hsl(0, 0%, 91%) 50%);
-  width:78%;  
+  width:78%;
+  min-width:340px;
 
   
 
@@ -40,5 +41,11 @@ body {
   
   align-items: center;
   justify-content: center;
+}
 
+@media (width < 768px){
+  body{
+    width:100%;
+  }
+  
 }
