@@ -1,4 +1,6 @@
-import "./css/homie.css"
+import "./css/homie.css";
+
+
 
 const Homie = () => {
     return(
