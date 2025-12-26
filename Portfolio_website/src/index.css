@@ -43,10 +43,14 @@ body {
   justify-content: center;
 }
 
+#menuButton{
+    display:none;
+  }
 
 
 
 @media (width < 768px){
+
   body{
     width:100%;
   }
@@ -61,14 +65,19 @@ body {
     z-index:1000;
 }
 
-#headerDiv{
+  #headerDiv{
     width: 90%;
     background-color: aqua;
     height: 30px; 
     align-items: center;
     padding: 10px;
     border-radius: 10px;
+
 }
+  #menuButton{
+    display:inherit;
+  }
+
     
   
 }

@@ -1,13 +1,14 @@
 import './css/contact.css'
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
 
 
 const Contact = ()=>{
     
+    console.log("lol");
+    
     
     return(
         <>
+        
         <div id="contact">
             <h1>Contact</h1>
             <h3>

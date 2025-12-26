@@ -26,7 +26,7 @@ function App() {
       <main>
         <header >
           <div id="headerDiv">
-            <IoMenu size={30} role='button' onClick={()=>{
+            <IoMenu size={30} id="menuButton" role='button' onClick={()=>{
               const daddy = document.querySelector(".navContainer");
               daddy.classList.toggle("open")
             }}/>
@@ -54,7 +54,12 @@ function App() {
 
         <footer>
           <hr id='footerHR'></hr>
-          <p>aom</p>
+          <div id="footerStuff">
+            <h5>
+
+            Designed by <span>aom</span>
+            </h5>
+          </div>
         </footer>
       </main>
     </>
