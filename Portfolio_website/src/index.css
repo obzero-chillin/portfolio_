@@ -43,9 +43,32 @@ body {
   justify-content: center;
 }
 
+
+
+
 @media (width < 768px){
   body{
     width:100%;
   }
+  header{
+    width:100%;
+    position:fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+#headerDiv{
+    width: 90%;
+    background-color: aqua;
+    height: 30px; 
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+    
   
 }

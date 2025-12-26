@@ -5,7 +5,7 @@ import Skills from "./components/skills.jsx";
 import Projects from "./components/projects.jsx";
 import References from "./components/references.jsx"; // Ensure you create this
 import Contact from "./components/contact.jsx";
-import '../src/App.css'
+import { IoMenu } from "react-icons/io5"; // Correct standard nameimport '../src/App.css'
 
 function App() {
   
@@ -24,7 +24,15 @@ function App() {
   return (
     <>
       <main>
-        <header>
+        <header >
+          <div id="headerDiv">
+            <IoMenu size={30} role='button' onClick={()=>{
+              const daddy = document.querySelector(".navContainer");
+              daddy.classList.toggle("open")
+            }}/>
+
+          </div>
+
           <Navbar setView={setCurrentView} /> 
         </header>
 

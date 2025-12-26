@@ -9,6 +9,8 @@
     width:20%;
     left:0;
     background:transparent;
+
+    top:0;
       
     
 
@@ -39,13 +41,31 @@
 @media (width < 768px){
     .navContainer{
         width:fit-content;
-        padding-left: 0%;
+        padding:0 1.5em 0 0;
         backdrop-filter: blur( 50px);
         background-color: hsla(168, 95%, 8%, 0.554);
         margin:1em 0 0 -100%;
+        top:2em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
         
         height:100%;
     }
+
+    .navContainer.open{
+        margin-left:3%;
+        transition: margin-left 2s ease;
+    }
+    .navItem{
+        margin: 1em 0 0 0;
+        padding-right:1em;
+
+
+    }
+
+
 }
-
-

@@ -28,7 +28,11 @@ const Navbar = ({setView}) => {
         <nav className="navbar">
             <div>
                 <ul>
-                <div className="navItem" role="button" onClick={(e) => navigateTo(e, '/')}>
+                <div className="navItem" role="button" onClick={
+                    (e) => {
+                        navigateTo(e, '/');
+                        
+                    }}>
                     <RiHome9Fill size="35" className="navIcon" />
                     <span href="/" >Home</span>
                 </div>
