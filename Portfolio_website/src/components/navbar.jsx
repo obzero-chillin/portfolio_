@@ -17,9 +17,17 @@ const Navbar = ({setView}) => {
         const element = document.querySelector(hash)
         if(element){
             element.scrollIntoView({behavior:"smooth"});
+            setTimeout(() => {
+                element.scrollIntoView({behavior:"smooth"});
+                
+            }, 1000);
         }
     }else{
         window.scrollTo({top:0, left:0, behavior:"smooth"});
+
+    }
+    if(window.innerWidth<768){
+        document.querySelector('.navContainer').classList.toggle('open');
 
     }
   };

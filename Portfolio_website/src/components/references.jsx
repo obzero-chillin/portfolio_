@@ -9,7 +9,7 @@ const References = ()=>{
 
     return(
         <div id="references">
-            <h1>
+            <h1 className="topic emy">
                 References      
             
             </h1>

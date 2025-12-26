@@ -11,8 +11,10 @@ import { LuGithub } from "react-icons/lu";
 const Skills = ()=>{
     return(
         <>                                                                                                   
-        <div id="skills">
-            <h1>Skills</h1>
+        <div id="skills" >
+            <h1 className='properMobile'>
+                <span className='topic'>Skills</span>
+            </h1>
             <div className="skillsIcons">
                 <FaHtml5 className='s_icon' title='HTML'/>
                 <FaCss3Alt className='s_icon' title='CSS'/>

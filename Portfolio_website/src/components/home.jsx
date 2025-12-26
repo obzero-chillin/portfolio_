@@ -6,7 +6,7 @@ const Homie = () => {
     return(
         <div id="home">
             <h1>
-                Hi, I'm Obonolo(or obi).<br/>           
+                <span className="emy topic">Hi, I'm Obonolo (or obi)</span><br/>           
             
             </h1>
             <span id="secondary">

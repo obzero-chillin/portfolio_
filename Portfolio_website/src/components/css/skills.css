@@ -38,7 +38,11 @@
 .s_icon{
     margin: 30px;
     font-size: 50px;
-    color:hsl(167.69,95.12%,8.04%);
+    color:var(--icon);
+}
+
+.topic{
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
 }
 
 @media (width<445px){

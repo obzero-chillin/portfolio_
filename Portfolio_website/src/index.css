@@ -1,10 +1,30 @@
 :root {
+  /*-------vars------*/
+  --gradientColor1:hsl(160,28%,80%);
+  --gradientColor2:hsl(160,28%,90%);
+  --gradientColor3:hsl(0, 0%, 91%);
+
+  --textColor:rgb(0, 0, 0);
+  --card:white;
+  --cardText:black;
+
+  --secondary1:hsl(37.44,59.11%,70.12%);
+  --secondary2:hsla(168, 95%, 8%, 0.554);
+
+  --secondary1og:hsl(37.44,59.11%,44.12%);
+  --secondary2og:hsl(160.91,28.21%,15.29%);
+
+  --borderColor:black;
+  --emphasis:black;
+  --icon:hsl(160.91,28.21%,15.29%);
+  --colorSecondary:rgb(59, 58, 58);
+    /*-------vars------*/
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark ;
-  color: rgb(0, 0, 0);
+  color: var(--textColor);
   
   
 
@@ -23,9 +43,29 @@
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark){
+  :root{
+    --gradientColor1:var(--secondary2);
+    --gradientColor2:var(--secondary2);
+    --gradientColor3:var(--secondary2);
+
+    --textColor:rgb(255, 255, 255);
+
+    --secondary1:hsl(42.55,44.72%,51.76%);
+
+    --borderColor:white;
+    --emphasis:hsl(43, 77%, 60%);
+    --icon:var(--emphasis);
+    --colorSecondary:grey;
+  }
+}
+.emy{
+  
+  color:var(--emphasis);
+}
 body {
 
-  background: linear-gradient(to bottom , hsl(160,28%,80%) 0%,hsl(160,28%,90%) 1%, hsl(0, 0%, 91%) 50%);
+  background: linear-gradient(to bottom , var(--gradientColor1) 0%,var(--gradientColor2) 5%, var(--gradientColor3) 50%);
   width:78%;
   min-width:340px;
 
@@ -50,6 +90,10 @@ body {
 
 
 @media (width < 768px){
+  .properMobile{
+    margin-top: 3em;
+  }
+  
 
   body{
     width:100%;
@@ -65,9 +109,11 @@ body {
     z-index:1000;
 }
 
+
   #headerDiv{
     width: 90%;
-    background-color: aqua;
+    background-color: var(--secondary2);
+    backdrop-filter: blur( 50px);
     height: 30px; 
     align-items: center;
     padding: 10px;

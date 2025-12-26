@@ -8,8 +8,8 @@ import ProjectCard from "./subComponents/projectCard.jsx";
 const Projects = ()=>{
     return(
         <>                                                                                                  
-        <div id="projects">
-            <h1>Projects</h1>
+        <div id="projects" >
+            <h1 className='properMobile topic emy'>Projects</h1>
             <div id="allProjects">
                 <ProjectCard
                     projectTitle={"Feature Flag Service"}

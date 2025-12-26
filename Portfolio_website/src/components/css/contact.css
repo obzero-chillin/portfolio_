@@ -25,7 +25,7 @@
     justify-content: center;
 }
 
-#clientEmail, #message{
+#user_message, #message{
     width:90%;
     min-width: 200px;
     max-width:600px;
@@ -33,23 +33,59 @@
 
     border-radius: 10px;
     margin-bottom:10px;
-    padding:5px;
+    padding:10px;
 }
 
 #contactForm>button{
     height:40px;
     margin-bottom: 90px;
-    border-radius: 50%;
-    border:0.5px solid black;
+    border-radius: 10px;
+    border:0.5px solid var(--borderColor);
 
 }
 label{
     font-weight:bold ;
 }
 
+#contactForm>.contactInput{
+    width:90%;
+    min-width: 200px;
+    max-width:600px;
+    height:20px;
+    border-radius: 10px;
+    border:0.5px solid var(--borderColor);
+    padding:10px;
+
+}
+#sendStatus{
+    font-size: large;
+    background-color: var(--secondary2);
+    backdrop-filter: blur(20px);
+    padding:10px;
+    color: var(--textColor);
+    width:90%;
+    max-width:500px;
+    border-radius: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#sendStatus.sent{
+    opacity: 1;
+}
+
 @media (width<768px){
     #contact{
         margin-top: 3em;
+    }
+
+    #formContainer{
+        margin-top: -60px;
     }
 
 }

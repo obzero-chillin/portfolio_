@@ -20,6 +20,10 @@
 
 #secondary{
     
-    color:rgb(59, 58, 58);
+    color:var(--colorSecondary);
+}
+.emy{
+  
+  color:var(--emphasis);
 }
 

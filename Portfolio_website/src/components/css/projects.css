@@ -17,6 +17,7 @@
   
 }
 #projects>h1{
+    color:var(--textColor);
     margin-bottom: 15%;
 }
 #allProjects{

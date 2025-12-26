@@ -10,18 +10,21 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(47, 47, 47, 0.59);
     border-radius: 10px;
-    background-color: #fff;
+    background-color: var(--card);
     min-width: 150px;;
     width:25%;
+    color:var(--cardText);
+   
+    
 
 }
 .refCard>button{
     padding: 8px 16px;   
     
-    background-color: hsl(37.44,59.11%,70.12%);
-    color: black;
+    background-color: var(--secondary1);
+    color: var(--textColor);
     border: none;
     border-radius: 5px;
     cursor: pointer;
